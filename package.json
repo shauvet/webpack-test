@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "start": "webpack",
+    "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
   },
-  "author": "",
+  "author": "xiaowei",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -17,6 +18,7 @@
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
     "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
     "postcss-loader": "^0.9.1",
