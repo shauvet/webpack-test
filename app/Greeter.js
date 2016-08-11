@@ -2,6 +2,7 @@
 
 import React, {Component} from 'react'
 import config from './config.json';
+import styles from './Greeter.css';
 
 // module.exports = function () {
 // 	var greet = document.createElement('div');
@@ -12,7 +13,7 @@ import config from './config.json';
 class Greeter extends Component{
 	render() {
 		return (
-				<div>
+				<div className={styles.root}>
 					{config.greetText}
 				</div>
 			);
